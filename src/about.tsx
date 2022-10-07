@@ -1,13 +1,15 @@
 import './App.css';
 
+import useRouter from '../router/useRouter';
+
 function About() {
+  const {push} = useRouter()
   return (
     <div className="App">
-      <h1>Wanted Onboarding First Assignment</h1>
+      <h1>ABOUT!</h1>
       <div className="card">
-        <h2>I am about!</h2>
-        <button>
-          link to root!
+        <button onClick={() => push('/')}>
+          link to root
         </button>
       </div>
     </div>
