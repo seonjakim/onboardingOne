@@ -1,6 +1,4 @@
-import { ReactElement } from 'react';
-
-const Route = ({path, component}: {path: string, component: ReactElement}) => {
+const Route = ({path, component}: {path: string, component: React.ReactNode}) => {
   return window.location.pathname === path ? component : null
 }
 
